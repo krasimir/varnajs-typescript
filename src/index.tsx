@@ -1,8 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 
-import './_examples/01.basicTypes';
-
 import App from './components/App';
 
 ReactDOM.render(<App name="World" />, document.querySelector('#container'));
