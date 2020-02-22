@@ -1,0 +1,1 @@
+A project used at VarnaJS meetup (Talk: TypeScript).
