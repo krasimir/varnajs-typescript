@@ -1,21 +1,21 @@
-// class Animal {
-//   public move(distanceInMeters = 0) {
-//     console.log(`Animal moved ${distanceInMeters}m.`);
-//   }
-// }
+class Vehicle {
+  public move(distanceInMeters = 0) {
+    console.log(`Vehicle moved ${distanceInMeters}m.`);
+  }
+}
 
-// class Dog extends Animal {
-//   private bite() {
-//     console.log('Bite');
-//   }
+class Plane extends Vehicle {
+  private fly() {
+    console.log('fly');
+  }
 
-//   public bark() {
-//     console.log('Woof! Woof!');
-//   }
-// }
+  public run() {
+    console.log('Broom!');
+  }
+}
 
-// const dog = new Dog();
-// dog.bark();
-// dog.move(10);
-// dog.bark();
-// // dog.bite();
+const plane = new Plane();
+plane.run();
+plane.move(10);
+plane.run();
+// dog.bite();

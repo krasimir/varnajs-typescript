@@ -1,5 +1,4 @@
 // ---------------------------------------------------
-
 // Interface type
 interface PointI {
   x: number;
@@ -50,3 +49,57 @@ interface CCC {
   x: number;
 }
 type DDD = CCC & { y: number };
+
+// ---------------------------------------------------
+// Implementing
+
+interface PPP {
+  x: number;
+  y: number;
+}
+class SomePoint implements Point {
+  constructor(x: number, y: number) {
+    this.x = 1;
+    this.y = 2;
+  }
+
+  x: 1;
+
+  y: 2;
+}
+
+type PPP2 = {
+  x: number;
+  y: number;
+};
+
+class SomePoint2 implements PPP2 {
+  constructor(x: number, y: number) {
+    this.x = 1;
+    this.y = 2;
+  }
+
+  x: 1;
+
+  y: 2;
+}
+
+type PPPUnion = { x: number } | { y: number };
+
+// FIXME: can not implement a union type
+/*
+class SomePartialPoint implements PPPUnion {
+  x: 1;
+
+  y: 2;
+}
+*/
+
+// ---------------------------------------------------
+// Declaration merging
+interface PP {
+  x: number;
+}
+interface PP {
+  y: number;
+}
