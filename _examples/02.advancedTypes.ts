@@ -1,13 +1,11 @@
 type Pet = {
   name: string;
 };
-
 enum CatFood {
   Meat = 'Meat',
   Fish = 'Fish',
   Cheese = 'Cheese',
 }
-
 type Cat = {
   food: CatFood;
 };
