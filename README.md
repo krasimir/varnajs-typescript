@@ -4,3 +4,4 @@ Links:
 
 * https://www.typescriptlang.org/
 * http://kangax.github.io/compat-table/es6/
+* https://github.com/David-Else/modern-typescript-with-examples-cheat-sheet
