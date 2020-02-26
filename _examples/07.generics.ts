@@ -1,7 +1,3 @@
-interface User {
-  toString: () => string;
-}
-
 function normalize<T>(arg: T): [T, Function] {
   return [arg, () => 42];
 }

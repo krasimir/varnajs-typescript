@@ -17,21 +17,21 @@ console.log(
   })
 );
 
-// inheritance
+// // inheritance;
 
-interface User extends Person {
-  id: string;
-}
+// interface User extends Person {
+//   id: string;
+// }
 
-function showUser(user: User): string {
-  return `(${user.id}) ${showPerson(user as Person)}`;
-}
+// function showUser(user: User): string {
+//   return `(${user.id}) ${showPerson(user as Person)}`;
+// }
 
-console.log(
-  showUser({
-    id: 'XXX',
-    firstName: 'Krasimir',
-    lastName: 'Tsonev',
-    age: 35,
-  })
-);
+// console.log(
+//   showUser({
+//     id: 'AAABBBCCC',
+//     firstName: 'Krasimir',
+//     lastName: 'Tsonev',
+//     age: 35,
+//   })
+// );

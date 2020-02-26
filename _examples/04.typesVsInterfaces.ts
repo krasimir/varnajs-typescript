@@ -15,7 +15,7 @@ type Point = {
 type SetPoint = (x: number, y: number) => void;
 
 // ---------------------------------------------------
-// Only with type aliases
+// Only with `type`
 
 // primitive
 type Name = string;
@@ -51,7 +51,7 @@ interface CCC {
 type DDD = CCC & { y: number };
 
 // ---------------------------------------------------
-// Implementing
+// `implements`
 
 interface PPP {
   x: number;
@@ -84,16 +84,13 @@ class SomePoint2 implements PPP2 {
   y: 2;
 }
 
-type PPPUnion = { x: number } | { y: number };
-
 // FIXME: can not implement a union type
-/*
-class SomePartialPoint implements PPPUnion {
-  x: 1;
+type PPPUnion = { x: number } | { y: number };
+// class SomePartialPoint implements PPPUnion {
+//   x: 1;
 
-  y: 2;
-}
-*/
+//   y: 2;
+// }
 
 // ---------------------------------------------------
 // Declaration merging
@@ -103,3 +100,10 @@ interface PP {
 interface PP {
   y: number;
 }
+// Error
+// type FooBar = {
+//   name: string;
+// };
+// type FooBar = {
+//   age: number;
+// };

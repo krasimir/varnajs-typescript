@@ -30,8 +30,7 @@ const place = 'VarnaLab';
 // function hello(message: string, name?: string): void {
 //   console.log(message, name || 'VarnaJS');
 // }
-
-// hello('Hey');
+// // hello('Hey');
 
 // // overloads
 // function eat(param: string): string;

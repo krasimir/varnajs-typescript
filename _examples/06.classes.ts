@@ -18,4 +18,4 @@ const plane = new Plane();
 plane.run();
 plane.move(10);
 plane.run();
-// dog.bite();
+// plane.fly();
